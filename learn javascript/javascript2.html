@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1 -->
+    <h1>js can "display" data in different ways</h1>
+    <h3><u>1<sup>st</sup></u>:</h3>
+    <p>we used innerHTML in this👇:</p>
+    <p id="plus"></p>
+    <hr>
+    <!-- 2 -->
+    <h3><u>2<sup>nd</sup></u>:</h3>
+    <p>we used document.write() in this👇:</p>
+    <p>for testing purpose it is convenient to use document.write()</p>
+    <p>it's it self is document write thing it write on document so it dont need an id like innerHTML</p>
+     <script>
+        document.write(5+6);   
+         </script>
+         <hr>
+    <!-- 3 -->
+    <h3><u>2<sup>nd</sup> part2</u>:</h3>
+    <p>this  is another example of document.write() </p>
+    <p>Using document.write() after an HTML document is loaded, will delete all existing HTML:</p>
+    <button type="button" onclick="document.write(5 + 6)">Try it</button>
+    <hr>
+    <!-- 4 -->
+    <h3><u>3<sup>rd</sup></u>:</h3>
+    <p>we used window.alert() in this 👇:</p>
+    <p>its an alert box</p>
+    <p>window keyword is optional</p>
+    <hr>
+    <!-- 5 -->
+    <h3><u>4<sup>th</sup></u>:</h3>
+    <p>For debugging purposes, you can call the console.log() method in the browser to display data.</p>
+     <script>
+            console.log(5+5);
+    </script>
+    <hr>
+    <h3><u>5<sup>th</sup></u>:</h3>
+    <p>JavaScript does not have any print object or print methods.
+    <br>
+    You cannot access output devices from JavaScript.
+     <br>
+    The only exception is that you can call the window.print() method in the browser to print the content of the current window.</p>
+    <button onclick="window.print()">print this page</button>
+    <button type="button"><a href="javascript3.html">next page</a></button>
+
+
+
+
+
+    <script>
+        document.getElementById("plus").innerHTML=5+6;
+    </script>
+   
+         <script>
+            window.alert(5+6);
+
+         </script>
+         <script>
+            alert(1+3);
+         </script>
+        
+</body>
+</html>

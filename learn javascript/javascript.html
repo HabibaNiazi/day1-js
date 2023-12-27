@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn javascrpt</title>
+    <script src="javascript.js"></script>
+    <script>
+        function thisfunction() {
+            document.getElementById("head").innerHTML="this is javascript"
+        }
+    </script>
+</head>
+<body style="background:palevioletred;">
+
+    <!-- 1 thing -->
+    <h1>javaScipt can change content of html</h1>
+    <p id="demo">hello</p>
+    <button onclick='document.getElementById("demo").innerHTML = "hello javascript"'>on click</button>
+    <hr>
+    <!-- 2 thing -->
+    <h1>js can change src of img</h1>
+    <button onclick="document.getElementById('image').src='img/on.jpg'">turn on</button>
+    <img src="img/off.jpg" id="image" alt="" style="width:100px">
+    <button onclick="document.getElementById('image').src='img/off.jpg'">turn off</button>
+    <hr>
+    <!-- 3 thing -->
+   <h1> javascript can change css style of html</h1>
+    <p id="style">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, similique.</p>
+    <button onclick="document.getElementById('style').style.fontSize='36px';">on click</button>
+    <hr>
+    <!-- 4 thing -->
+    <h1>js can hide html element</h1>
+    <p id="hide">hide this text </p>
+    <button onclick="document.getElementById('hide').style.display='none';">click to hide</button>
+    <hr>
+    <!-- 5 thing -->
+    <h1>you can show hidden text</h1>
+    <p id="show" style="display:none;">hidden text</p>
+    <button onclick="document.getElementById('show').style.display='block';">click to show</button>
+    <hr>
+    <h1>no button but text change</h1>
+    <p id="internal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, modi?</p>
+    <script>
+        document.getElementById('internal').innerHTML='text changed'
+    </script>
+    <hr>
+    <!-- 6 thing -->
+    <h1>JavaScript in Head</h1>
+    <p id="head">this is a paragraph</p>
+    <button onclick="thisfunction()">button</button>
+    <hr>
+    <!-- 7 thing -->
+    <h1>javascript in body</h1>
+    <p id="body">this is a paragraph</p>
+    <button onclick="myfunction()">button</button>
+    <hr>
+    <!-- 8 thing -->
+    <h1>this is an external js</h1>
+    <p id="external">this is a paragraph</p>
+    <button onclick="getfunction()">button</button>
+    <hr>
+
+
+<button><a href="javascript2.html">click for more in next page</a></button>
+    
+    <script>
+        function myfunction() {
+            document.getElementById("body").innerHTML = "this is js"
+        }
+    </script>
+</body>
+</html>
